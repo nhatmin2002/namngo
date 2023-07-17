@@ -1,10 +1,10 @@
 python ./run_ner.py \
---data_dir ../kaggle\input\datataskmrthe\
+--data_dir ../data \
 --model_name_or_path {model} \
---labels ../kaggle/input/datataskmrthe/labels.txt \
+--labels ../data/labels.txt \
 --output_dir ./output \
 --max_seq_length 128 \
---num_train_epochs 1 \
+--num_train_epochs 30 \
 --per_device_train_batch_size 32 \
 --seed 1 \
 --logging_strategy "epoch" \
