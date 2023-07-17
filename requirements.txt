@@ -1,0 +1,5 @@
+vncorenlp==1.0.3
+seqeval==1.2.2
+conllu==4.4.1
+transformers
+sentencepiece
