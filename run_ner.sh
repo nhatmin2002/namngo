@@ -12,8 +12,6 @@ python ./run_ner.py \
 --load_best_model_at_end True \
 --save_total_limit 2 \
 --crf True \
---lstmcrf True\
---LSTM-CRF True\
 --save_strategy "no" \
 --do_predict true \
 --overwrite_output_dir
