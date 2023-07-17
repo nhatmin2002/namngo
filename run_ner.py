@@ -209,7 +209,6 @@ def main():
             max_seq_length=data_args.max_seq_length,
             overwrite_cache=data_args.overwrite_cache,
             mode=Split.train,
-            lock_dir=data_args.data_dir
         )
         if training_args.do_train
         else None
