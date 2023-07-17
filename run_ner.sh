@@ -1,7 +1,7 @@
 python ./run_ner.py \
---data_dir ../data \
+--data_dir ../kaggle\input\datataskmrthe\
 --model_name_or_path {model} \
---labels ../data/labels.txt \
+--labels ../kaggle/input/datataskmrthe/labels.txt \
 --output_dir ./output \
 --max_seq_length 128 \
 --num_train_epochs 1 \
