@@ -229,8 +229,8 @@ def main():
     )
 
     def align_predictions(predictions: np.ndarray, label_ids: np.ndarray) -> Tuple[List[int], List[int]]:
-        # preds = np.argmax(predictions, axis=2)
-        preds = predictions
+        preds = np.argmax(predictions, axis=2)
+        #preds = predictions
 
         batch_size, seq_len = preds.shape
 
@@ -244,6 +244,8 @@ def main():
                     preds_list[i].append(label_map[preds[i][j]])
 
         return preds_list, out_label_list
+
+    
 
     def compute_metrics(p: EvalPrediction) -> Dict:
         preds_list, out_label_list = align_predictions(p.predictions, p.label_ids)
